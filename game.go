@@ -29,8 +29,8 @@ func newGame() game {
 	return moves
 }
 
-func deal(d game, handSize int) (game, game) {
-	return d[:handSize], d[handSize:]
+func turns(d game, currentTurn int) (game, game) {
+	return d[:currentTurn], d[currentTurn:]
 }
 
 func (d game) toString() string {

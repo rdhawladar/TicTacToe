@@ -1,13 +1,13 @@
 package main
 
 func main() {
-	cards := newGameFromFile("my_cards")
-	cards.shuffle()
-	cards.print()
+	game := newGameFromFile("my_game")
+	game.shuffle()
+	game.print()
 
-	// cards.saveToFile("my_cards")
+	// game.saveToFile("my_game")
 
-	/* hand, remaining := deal(cards, 4)
+	/* hand, remaining := turns(game, 4)
 	hand.print()
 	remaining.print() */
 }
